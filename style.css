@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #0b1111;
+}
+/* header - começo- */
+header{
+    background-color: #222222;
+    border-bottom: #246666 2px solid;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.logo a{
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    display: flex;
+}
+
+.logo p{
+    padding: 8px;
+    font-family: 'aboreto';
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: relative;
+}
+/* header - final - */
+
+/* hover navegação - começo - */
+.nav-link:hover{
+    color: #246666;
+    transition: 0.6s;
+}
+
+.nav-link::before,
+.nav-link::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #246666;
+    transform: scaleX(0);
+    transition: all 0.6s ease;
+}
+
+.nav-link::before{
+    top: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.nav-link::after{
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after{
+    transform: scaleX(1);
+}
+
+/* hover navegação - final - */
+
+/* Estilo button cv - começo - */
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #246666;
+    border-radius:15px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: .6s;
+  }
+  
+  .button:hover {
+    background-color: #246666;
+    filter: drop-shadow(0 0 10px #246666) contrast(2) brightness(2);
+  }
+
+  .button a{
+    text-decoration: none;
+    color: #246666;
+  }
+
+  .button:hover a{
+    color: #fff;
+    transition: .6s;
+  }
+/* Estilo button cv - cfinal - */
+
+  .mobile-menu-icon{
+    display: none;
+  }
+
+  .mobile-menu{
+    display: none;
+  }
+
+  @media screen and (max-width: 1197px){
+    .nav-bar {
+      padding: 1.5rem 4rem;
+    }
+
+    .nav-item{
+      display: none;
+    }
+
+    .button{
+      display: none;
+    }
+
+    .mobile-menu-icon{
+      display: block;
+    }
+
+    .mobile-menu-icon button{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-menu ul{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+      display: block;
+      padding-top: 1.2rem;
+    }
+
+    .mobile-menu .button{
+      display: flex;
+      margin: auto;
+      margin-bottom: 20px;
+      padding: 1rem 2rem;
+      width: 50%;
+    }
+    
+    .mobile-menu .button a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .open{
+      display: block;
+    }
+  }
+
+  .apresentacao{
+    border: #fff solid 1px;
+    margin-top: 130px;
+    color: #fff;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .texto-inicio h1{
+    font-size: 58px;
+  }
+
+  .texto-inicio p{
+    font-size: 28px;
+  }
+
+  .texto-inicio span{
+    color: #246666;
+  }
+
+  .avatar {
+    width: 360px;
+    border-radius: 100%;
+  }
+
+  .perfis{
+    border: solid #fff 1px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  .perfis a i{
+    font-size: 30px;
+  }
+
+  #github{
+    color: #246666;
+  }
+
+  #github :hover{
+    color: #db7c00;
+    transition: all 1s;
+  }
+
+  #linkedin{
+    color: #246666;
+  }
+
+  #linkedin :hover{
+    color: #0e76a8;
+    transition: all 1s;
+  }
+
+  #email{
+  color: #246666;
+}
+
+  #email :hover{
+    color: #0F3464;
+    transition: all 1s;
+  }
+
+
+  @media screen and (max-width: 730px) {
+    .avatar{
+      width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .avatar{
+     display: none;
+    }
+  }
+   
+  /* section de habilidades -começo- */
+  .habilidades{
+    border: #fff solid 1px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  /* section de habilidades -final- */
+
+  /* Div skills - começo- */
+  .skills{
+    display: flex;
+    justify-content: center;
+    border: greenyellow solid 1px;
+    border-radius: 5px;
+    width: 120px;
+    height: 140px;
+    margin: 3px;
+    padding: 5px;
+    padding: auto;
+    color: #246666;
+  }
+
+  .skills img{
+    width: 60px;
+    position: absolute;
+    margin-top: 40px;
+  }
+
+  /* Div skills -final- */
+#about{
+  text-align: center;
+}
+  /* Sobre -começo- */
+  #sobre{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    padding: 5px;
+  }
+
+  #sobre span{
+    border-bottom: solid 2px #246666 ;
+  }
+
+  #sobre h1{
+    font-size: 36px;
+    margin: 20px;
+  }
+
+  #sobre p{
+    font-size: 18px;
+    margin: 5px 20px;
+  }
+
+  mark{
+    background-color: #246666;
+    border-radius: 3px;
+    opacity: 70%;
+  }
+
+  .informacoes{
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px;
+    margin-top: 60px;
+    padding: 25px;
+  }
+  
+  .informacoes .btn{
+    background-color: #246666;
+    border-radius: 30px;
+    padding: 8px;
+    margin: 8px;
+    margin-top: 40px;
+    width: 120px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .informacoes .btn:hover{
+    background-color: #246666;
+    filter: drop-shadow(0 0 10px #246666) contrast(2) brightness(2);
+  }
+
+  .informacoes .btn a {
+    color: #000;
+    font-style: bold;
+    font-family: "poppins";
+    font-size: 18px;
+  }
+
+  .informacoes a{
+    color: #246666;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .informacoes ul{
+    list-style: none;
+  }
+
+  .informacoes span {
+    border: none;
+    margin: 8px;
+  }
+
+  .informacoes li{
+    font-family: 'poppins';
+    padding: 12px;
+    font-size: 16px;
+    color: #DEE3E4;
+    border-bottom: 1px solid #808080;
+  }
+
+  /* Sobre -final- */
