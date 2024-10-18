@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="shortcut icon" href="imagens/favicon-azul-16x16.png" type="favicon">
     <title>Portfólio | André Lopes</title>
 </head>
+
 <body>
     <header>
         <nav class="nav-bar">
@@ -18,122 +20,195 @@
                 </a>
             </div>
 
-                <div class="nav-list">
-                    <ul>
-                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Habilidades</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
-                    </ul>
-                </div>
-            
-                <div class="button"><a href="#">Baixar CV</a></div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#Projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
 
-                <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt="MENU"></button>
-                </div>
+            <div class="button"><a href="#">Baixar CV</a></div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt="MENU"></button>
+            </div>
         </nav>
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Habilidades</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#Projetos" class="nav-link">Habilidades</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
             </ul>
             <div class="button"><a href="#">Baixar CV</a></div>
         </div>
     </header>
 
-    <main>
-        <section class="apresentacao">
-            <div class="texto-inicio">
-                <h1>Olá,</h1>
-                <p>Meu nome é <span>André Lopes</span>. <br>Seja bem vindo ao meu Portfólio!</br></p>
-                <div class="perfis">
-                    <a id="github" href="https://github.com/Andre-peixoto-lopes" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a id="linkedin" href="https://www.linkedin.com/in/andr%C3%A9-peixoto-lopes/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a id="email" href="mailto:andrepeixotocontato@hotmail.com?subject=Portf%C3%B3lio" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
+    <section id="home">
+        <div id="container">
+            <div id="foto">
+                <img id="img" src="imagens/foto Perfil.jpg" alt="Foto-perfil">
+            </div>
+            <div id="intro">
+                <div id="txt">
+                    <h1>Olá,</h1>
+                    <p>Meu nome é <span>André Lopes</span>. <br>Seja bem vindo ao meu Portfólio!</br></p>
+                </div>
+                <div class="sociais">
+                    <a href="https://github.com/Andre-peixoto-lopes"><i id="git" class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/andr%C3%A9-peixoto-lopes/"><i id="link"
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:andrepeixotocontato@hotmail.com?subject=Vindo do Portf%C3%B3lio!"><i id="mail"
+                            class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <aside>
-                <img class="avatar" src="imagens/foto Perfil.jpg" alt="Avatar">
+    <section id="sobre">
+        <h2><mark>Sobre Mim</mark></h2>
+
+        <div id="sobre-content">
+            <aside id="txt-apresentacao">
+                <h2>Olá!</h2>
+                <p>Me chamo <span>André Peixoto Lopes</span>, tenho 20 anos e, sou de Jundiaí-SP.</p>
+                <p>Estou no 4° Semestre de Ciência da computação. Atualmente meu foco tem sido o desenvolvimeto web, com
+                    amplo conhecimento nas principais tecnologias, como HTML5, CSS3, JAVASCRIPT. <br> Em minha trilha de
+                    estudos, busco desenvolver habilidades com NODE, REACT, NEXT.JS e NODE.JS, por exemplo. Sem contar
+                    meu desejo em adquirir conhecimentos em tecnologias utilizadas no passado como o PHP</p>
+
+                <p>Além disso, na faculdade tive contato com outras tecnologias fora da stack web, como: C#, C/C++ e,
+                    SQL</p>
             </aside>
-        </section>
-        
-        <section id="sobre">
-            <div id="about">
-                <h1><mark>Sobre mim</mark></h1>
-                <h2>Meu nome é <span>André Peixoto Lopes</span>, um apaixonado pela tecnologia.</h2>
-                    <p>No inicio de 2023, quando dei inicio ao meu bacharelado em ciências da computação, entendi que para chegar onde gostaria, algo mais seria necessario.
-                    Então a partir do segundo semestre iniciei meus estudos independentes, começando pelo HTML5, CSS3 e JS. Desde então venho agregando mais conhecimento para minhas stacks </p>
-                    E sempre "Codando" algum projeto.</p>
-            </div>
 
-                <div class="informacoes">
-                    <h1><mark>Informações</mark></h1>
-                    <ul>
-                        <li><span>Nome:</span>André Lopes</li>
-                        <li><span>Email:</span><a href="mailto:andrepeixotocontato@hotmail.com">andrepeixotocontato@hotmail.com</a></li>
-                        <li><span>Idade:</span>19 anos</li>
-                        <li><span>De:</span>Jundiai-SP</li>
-                        <li><span>Periodo:</span>3ºSemestre</li>
-                    </ul>
-                    <div class="btn"><a href="#">Saiba mais</a></div>
+            <div id="cards-apresentacao">
+                <div class="card-info">
+                    <h3>Primeiro Contato:</h3>
+                    <p>Tive meu primeiro contato com a programção há 2 anos, quando, por curiosidade resolvi assistir
+                        um tutorial e, arriscar meus primeiros códigos.</p>
+
+                    <a href="">Veja</a>
                 </div>
-        </section>
 
-        <section class="habilidades">
-            <div class="skills">
-                <h1>HTML5</h1>
-                <img src="imagens/html5.svg" alt="HTML5">
-            </div>
+                <div class="card-info">
+                    <h3>Interesses:</h3>
+                    <p>Sempre gostei muito de tecnologia e, após iniciar a faculdade e conhecer a programção, me
+                        interessei muito pelo desenvolvimento web. Busco sempre aprender mais, para me consolidar como
+                        um
+                        profissional de excelencia.</p>
+                </div>
 
-            <div class="skills">
-                <h1>CSS3</h1>
-                <img src="imagens/css3-alt.svg" alt="CSS3">
-            </div>
+                <div class="card-info">
+                    <h3>Experiencias:</h3>
+                    <li>Estagiário: Especialista em TI - FMJ</li>
+                    <li>Freelancer: Desenvolvedor Web</li>
+                    <li>Desenvolvimento de Projetos academicos </li>
 
-            <div class="skills">
-                <h1>JS</h1>
-                <img src="imagens/js.svg" alt="JAVASCRIPT">
+                </div>
             </div>
+        </div>
 
-            <div class="skills">
-                <h1>FIGMA</h1>
-                <img src="imagens/figma.svg" alt="FIGMA">
-            </div>
-            
-            <div class="skills">
-                <h1>BOOTSTRAP</h1>
-                <img src="imagens/bootstrap.svg" alt="BOOTSTRAP">
-            </div>
-            
-            <div class="skills">
-                <h1>APACHE</h1>
-                <img src="imagens/feather-pointed-solid.svg" alt="APACHE">
-            </div>
+    </section>
 
-            <div class="skills">
-                <h1>PHP</h1>
-                <img src="imagens/php.svg" alt="PHP">
-            </div>
-
-            <div class="skills">
-                <h1>MySQL</h1>
-                <img src="imagens/mysql.png" alt="MYSQL">
-            </div>
-
-            <div class="skills">
-                <h1>SASS</h1>
-                <img src="imagens/sass.svg" alt="SASS">
-            </div>
-
-        </section>
-    </main>
+    <section id="Projetos">
+        <h2><mark>Projetos</mark></h2>
+        <div id="Portfolio">
+            <article class="project-post">
+                <img width="345px" src="imagens/site de casamento.png" alt="Projeto-1">
+                <div class="btns-post">
+                    <a class="repositorio" href="https://github.com/Andre-peixoto-lopes/Felipe-Andresa" target="_blank"><i class="fa-brands fa-github"></i>Repositorio</a>
+                    <a class="on-air" href="https://felipe-andresa.vercel.app/" target="_blank"><i class="fa-solid fa-display"></i>Projeto</a>
+                </div>
+                <div class="text-post">
+                    <h3>Site De Casamento</h3>
+                    <p>O site consiste em um hub de informações, onde o convidado pode obter os dados dos eventos e
+                        confirmar sua presença no formulario, que é integrado em uma planilha do google utilizada como banco
+                        de dados através de uma API. </p>
+                </div>
+                    <div>
+                        <h3 id="techs">Tecnologias:</h3>
+                        <div class="icons">
+                            <i style="color: orange;" class="fa-brands fa-html5"></i>
+                            <i style="color: rgb(51, 107, 228);" class="fa-brands fa-css3-alt"></i>
+                            <i style="color: yellow;" class="fa-brands fa-js"></i>
+                            <i style="color: #246666;" class="fa-solid fa-server"></i>
+                        </div>
+                    </div>
+            </article>
+            <article class="project-post">
+                <img width="345px" src="imagens/site de casamento.png" alt="Projeto-1">
+                <div class="btns-post">
+                    <a class="repositorio" href="https://github.com/Andre-peixoto-lopes/Felipe-Andresa" target="_blank"><i class="fa-brands fa-github"></i>Repositorio</a>
+                    <a class="on-air" href="https://felipe-andresa.vercel.app/" target="_blank"><i class="fa-solid fa-display"></i>Projeto</a>
+                </div>
+                <div class="text-post">
+                    <h3>Site De Casamento</h3>
+                    <p>O site consiste em um hub de informações, onde o convidado pode obter os dados dos eventos e
+                        confirmar sua presença no formulario, que é integrado em uma planilha do google utilizada como banco
+                        de dados através de uma API. </p>
+                </div>
+                    <div>
+                        <h3 id="techs">Tecnologias:</h3>
+                        <div class="icons">
+                            <i style="color: orange;" class="fa-brands fa-html5"></i>
+                            <i style="color: rgb(51, 107, 228);" class="fa-brands fa-css3-alt"></i>
+                            <i style="color: yellow;" class="fa-brands fa-js"></i>
+                            <i style="color: #246666;" class="fa-solid fa-server"></i>
+                        </div>
+                    </div>
+            </article>
+            <article class="project-post">
+                <img width="345px" src="imagens/site de casamento.png" alt="Projeto-1">
+                <div class="btns-post">
+                    <a class="repositorio" href="https://github.com/Andre-peixoto-lopes/Felipe-Andresa" target="_blank"><i class="fa-brands fa-github"></i>Repositorio</a>
+                    <a class="on-air" href="https://felipe-andresa.vercel.app/" target="_blank"><i class="fa-solid fa-display"></i>Projeto</a>
+                </div>
+                <div class="text-post">
+                    <h3>Site De Casamento</h3>
+                    <p>O site consiste em um hub de informações, onde o convidado pode obter os dados dos eventos e
+                        confirmar sua presença no formulario, que é integrado em uma planilha do google utilizada como banco
+                        de dados através de uma API. </p>
+                </div>
+                    <div>
+                        <h3 id="techs">Tecnologias:</h3>
+                        <div class="icons">
+                            <i style="color: orange;" class="fa-brands fa-html5"></i>
+                            <i style="color: rgb(51, 107, 228);" class="fa-brands fa-css3-alt"></i>
+                            <i style="color: yellow;" class="fa-brands fa-js"></i>
+                            <i style="color: #246666;" class="fa-solid fa-server"></i>
+                        </div>
+                    </div>
+            </article>
+            <article class="project-post">
+                <img width="345px" src="imagens/site de casamento.png" alt="Projeto-1">
+                <div class="btns-post">
+                    <a class="repositorio" href="https://github.com/Andre-peixoto-lopes/Felipe-Andresa" target="_blank"><i class="fa-brands fa-github"></i>Repositorio</a>
+                    <a class="on-air" href="https://felipe-andresa.vercel.app/" target="_blank"><i class="fa-solid fa-display"></i>Projeto</a>
+                </div>
+                <div class="text-post">
+                    <h3>Site De Casamento</h3>
+                    <p>O site consiste em um hub de informações, onde o convidado pode obter os dados dos eventos e
+                        confirmar sua presença no formulario, que é integrado em uma planilha do google utilizada como banco
+                        de dados através de uma API. </p>
+                </div>
+                    <div>
+                        <h3 id="techs">Tecnologias:</h3>
+                        <div class="icons">
+                            <i style="color: orange;" class="fa-brands fa-html5"></i>
+                            <i style="color: rgb(51, 107, 228);" class="fa-brands fa-css3-alt"></i>
+                            <i style="color: yellow;" class="fa-brands fa-js"></i>
+                            <i style="color: #246666;" class="fa-solid fa-server"></i>
+                        </div>
+                    </div>
+            </article>
+        </div>
+    </section>
 
     <script src="index.js"></script>
 </body>
+
 </html>
