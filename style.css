@@ -204,11 +204,41 @@ header {
 /* header - final - */
 
 #home {
+  overflow-x: hidden;
   display: flex;
+  margin: 60px 0;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100dvh;
-  background-position: fixed;
+}
+
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+#slide{
+  display: flex;
+  overflow: hidden;
+  padding:30px 0px;
+  white-space: nowrap;
+}
+
+#stacks{
+  display: flex;
+  animation: 15s slide infinite linear;
+  color: #fff;
+}
+
+#stacks p{
+  font-size: 2em;
+  margin: 0 40px;
+  font-family: 'aboreto';
 }
 
 #container {
@@ -284,7 +314,7 @@ span {
   background: #242424;
 }
 
-#sobre h2{
+#sobre h1{
   text-align: center;
   font-size: 2.5em;
   padding: .9em;
@@ -293,6 +323,7 @@ span {
 
 #sobre-content{
   color: #ffffffbc;
+  width: 100%;
   padding: 12px;
 }
 
@@ -317,7 +348,7 @@ span {
 }
 
 #txt-apresentacao p{
-  max-width: 85%;
+  max-width: 90%;
 }
 
 #cards-apresentacao{
@@ -335,7 +366,7 @@ span {
   flex-direction: column;
   margin: 2em;
   width: 350px;
-  height: 200px;
+  height: 230px;
   background-color: #343434;
   padding: 8px;
   border-radius: 12px;
@@ -360,10 +391,10 @@ span {
 }
 
 .card-info li{
-  padding: 16px 0px;
+  padding: 12px 0px;
 }
 
-#Projetos h2{
+#Projetos h1{
   text-align: center;
   font-size: 3em;
   padding: 1em;
@@ -385,9 +416,14 @@ span {
   background-color: #343434;
 }
 
+.project-post img{
+  filter: brightness(.9);
+}
+
 .project-post img:hover{
   transform: translatey(-6px);
   transition: all .5s;
+  filter: brightness(1);
 }
 
 .project-post h3{
@@ -466,4 +502,55 @@ span {
   border-radius: 12px;
   padding: 8px 12px;
   transition: all .5s;
+}
+
+#habilidades{
+  background-color: #242424;
+}
+
+#habilidades h1{
+  text-align: center;
+  font-size: 2.5em;
+  padding: .9em;
+  color: white;
+}
+
+#habilidades-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+#engine-skills{
+  background-color: #343434;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+
+.eng-task{
+ background-color: #242424;
+ border-radius: 8px;
+ margin: 1em 0;
+ padding: 8px;
+ color: #fff;
+ font-weight: 300;
+ display: flex;
+ align-items: center;
+ max-width: 350px;
+}
+
+.eng-task h2{
+  font-size: 1.4em;
+}
+
+.eng-task i{
+  font-size: 2em;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 0 8px;
+  background-color: #0b1111;
 }
