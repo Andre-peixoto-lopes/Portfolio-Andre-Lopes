@@ -636,7 +636,6 @@ span {
   color: #ffffffbc;
   border-radius: 15px;
   margin: 6em 1em;
-  cursor: pointer;
 }
 
 @media (max-width: 600px) {
