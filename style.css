@@ -394,6 +394,14 @@ span {
   padding: 12px 0px;
 }
 
+.card-info ul{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+  margin-left: 12px;
+}
+
 #Projetos h1{
   text-align: center;
   font-size: 3em;
